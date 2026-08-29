@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['natural grass','lawn grass','grass carpet','lawn installation','landscaping near me','Delhi NCR lawn','Ghaziabad grass supplier','Noida lawn service','SR Green Lawn'],
   metadataBase: new URL('https://srgreenlawn.com'),
   verification: {
-    google: "M1T_vnhKTnvlAdoV3kWvtYIRIINGHX0VxGGHXAGP3IY",
+    google: "M1t_vnhKTnvIAdoV3kVwtYlRlINGMXOVx6GHXAGP3iY",
   },
   openGraph: { title: 'SR Green Lawn — Lush lawns. Healthy yards.', description: 'Natural grass supply, installation and landscaping across North India.', type: 'website', locale: 'en_IN' },
 }
