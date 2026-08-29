@@ -1,0 +1,3 @@
+import { GalleryGrid, PageHero, Shell } from '@/components/site-shell'
+import { GALLERY } from '@/lib/site-data'
+export default function Gallery(){return <Shell><main><PageHero eyebrow="Our work" title="See the green take shape." text="A selection of real natural grass supply, installation and before-and-after transformations from SR Green Lawn projects."/><section className="content-section"><div className="container"><GalleryGrid/><div className="before-after" style={{marginTop:16}}><img src={GALLERY[4][1]} alt="Natural grass delivered on a truck"/><img src={GALLERY[5][1]} alt="Natural grass installation in a garden"/></div></div></section></main></Shell>}

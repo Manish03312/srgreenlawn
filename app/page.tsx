@@ -1,47 +1,14 @@
-export default function Page() {
-  return (
-    <main
-      style={{
-        colorScheme: 'light dark',
-        position: 'relative',
-        display: 'flex',
-        minHeight: '100vh',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'light-dark(#fff, #000)',
-        color: 'light-dark(#000, #fff)',
-      }}
-    >
-      <svg
-        aria-hidden="true"
-        style={{ width: 80, height: 80 }}
-        width={80}
-        height={80}
-        fill="none"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-        stroke="currentColor"
-        strokeWidth="0.5"
-      >
-        <path
-          d="M14.2 14.2H17V6.9375C17 4.76288 15.2371 3 13.0625 3H5.8V5.8M14.2 14.2V7.79063L7.79062 14.2H14.2ZM14.2 14.2V17H6.9375C4.76288 17 3 15.2371 3 13.0625V5.8H5.8M5.8 5.8V12.2313L12.2313 5.8H5.8Z"
-          strokeLinejoin="round"
-        />
-      </svg>
-      <p
-        style={{
-          position: 'absolute',
-          left: '50%',
-          top: 'calc(50% + 56px)',
-          transform: 'translateX(-50%)',
-          whiteSpace: 'nowrap',
-          fontSize: '14px',
-          fontWeight: 500,
-          color: 'light-dark(#71717a, #a1a1aa)',
-        }}
-      >
-        Your v0 generation will show here.
-      </p>
-    </main>
-  )
-}
+import Image from 'next/image'
+import { ArrowUpRight, Droplets, ShieldCheck, Sparkles } from 'lucide-react'
+import { CTA, GalleryGrid, SectionHeading, Shell } from '@/components/site-shell'
+import { GALLERY } from '@/lib/site-data'
+
+export default function Home() { return <Shell><main>
+  <section className="hero"><div className="container hero-grid"><div className="hero-copy"><span className="eyebrow">Natural grass · Delivered & installed</span><h1>Bring home a lawn that feels <em>alive.</em></h1><p>Premium natural grass and thoughtful landscaping for spaces across Delhi NCR, Uttar Pradesh, Rajasthan, Punjab, Haryana and beyond.</p><div className="hero-actions"><CTA>Plan my lawn</CTA><a className="text-link" href="tel:+917011903745">Talk to an expert <ArrowUpRight size={17}/></a></div><div className="hero-note"><span>★</span><div><strong>From soil to soft carpet</strong><small>Site visit · Honest quote · Expert installation</small></div></div></div><div className="hero-image"><Image src={GALLERY[1][1]} alt="Fresh natural grass lawn installed by SR Green Lawn" fill priority sizes="(max-width: 800px) 100vw, 52vw"/><div className="image-tag">01 <span>/</span> 06</div></div></div></section>
+  <section className="trust-strip"><div className="container trust-items"><span><ShieldCheck/> Quality natural turf</span><span><Droplets/> Climate-smart guidance</span><span><Sparkles/> Neat, lasting finish</span></div></section>
+  <section className="section"><div className="container"><SectionHeading eyebrow="The SR Green Lawn difference" title="A greener everyday starts under your feet." text="Natural grass cools outdoor spaces, softens the look of a home and gives you a living surface to enjoy. We make the entire journey simple — from choosing the right grass to preparing the soil and laying every roll."/><div className="card-grid three"><article className="info-card"><span className="card-number">01</span><h3>Right grass, right place</h3><p>We recommend varieties and care routines based on sunlight, footfall, soil and the local climate.</p></article><article className="info-card featured"><span className="card-number">02</span><h3>Prepared to last</h3><p>Our team handles soil levelling, edges, joining and initial watering so your lawn settles evenly.</p></article><article className="info-card"><span className="card-number">03</span><h3>Care beyond installation</h3><p>Get practical guidance for mowing, irrigation, nutrition and seasonal maintenance.</p></article></div></div></section>
+  <section className="section section-tint"><div className="container split"><div><span className="eyebrow">Natural grass, simply explained</span><h2>Not artificial. Not temporary. Just a living lawn.</h2><p>Natural grass is a layer of living turf with roots and soil. Once installed and watered correctly, it knits into the ground and becomes a resilient, cooling carpet. It needs sunlight, water, nutrition and regular mowing — but rewards you with a softer, healthier outdoor space.</p><CTA href="/our-services">Explore our services</CTA></div><div className="quote-card"><div className="quote-mark">“</div><p>We don&apos;t just lay grass. We shape the first impression of your home, business or outdoor space.</p><span>— Manish Prajapati, Founder</span></div></div></section>
+  <section className="section"><div className="container"><SectionHeading eyebrow="Recent transformations" title="Real work. Real green." text="A glimpse of lawns we have prepared, supplied and installed for our clients."/><GalleryGrid limit={3}/><div className="center"><CTA href="/grass-gallery">View full gallery</CTA></div></div></section>
+  <section className="cta-banner"><div className="container"><div><span className="eyebrow">Your lawn story begins here</span><h2>Tell us about your space.</h2></div><CTA>Get a free site consultation</CTA></div></section>
+  <section className="seo-copy"><div className="container"><h2>Natural grass and landscaping across North India</h2><p>SR Green Lawn provides natural grass, lawn grass, turf carpet, garden landscaping and complete lawn installation for residential, commercial and outdoor spaces. Serving Delhi NCR, Noida, Greater Noida, Ghaziabad, Hapur, Agra, Jaipur, Uttar Pradesh, Rajasthan, Punjab, Haryana, Chandigarh, Jammu & Kashmir and nearby areas.</p></div></section>
+</main></Shell> }
