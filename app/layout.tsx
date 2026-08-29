@@ -7,9 +7,9 @@ const body = DM_Sans({ subsets: ['latin'], variable: '--font-body' })
 const display = DM_Serif_Display({ subsets: ['latin'], weight: '400', variable: '--font-display' })
 
 export const metadata: Metadata = {
-  title: { default: 'SR Green Lawn | Natural Grass & Lawn Installation', template: '%s | SR Green Lawn' },
-  description: 'SR Green Lawn supplies and installs premium natural grass, lawn carpet and landscaping across Delhi NCR, Ghaziabad, Noida, Uttar Pradesh, Rajasthan, Punjab, Haryana and nearby areas.',
-  keywords: ['natural grass','lawn grass','grass carpet','lawn installation','landscaping near me','Delhi NCR lawn','Ghaziabad grass supplier','Noida lawn service','SR Green Lawn'],
+  title: { default: 'Green Grass, Natural Grass, Lawn Grass & Turf - Delivered & Installed in Ghaziabad, Muradnagar, Noida, Delhi NCR, UP | SR Green Lawn', template: '%s | SR Green Lawn' },
+  description: 'SR Green Lawn provides Green grass, Natural grass, Lawn grass, Turf, Playground grass, Park grass, Home lawn grass, garden landscaping and complete lawn installation in Ghaziabad, Muradnagar, Noida, Delhi NCR, Meerut, UP, All India',
+ keywords: ['Green grass', 'Natural grass', 'Lawn grass', 'Turf', 'grass carpet', 'lawn installation', 'Ghaziabad grass supplier', 'Noida lawn service', 'Delhi NCR lawn', 'Muradnagar', 'Meerut','all india'],
   metadataBase: new URL('https://srgreenlawn.com'),
   verification: {
     google: "M1t_vnhKTnvIAdoV3kVwtYlRlINGMXOVx6GHXAGP3iY",
